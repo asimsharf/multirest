@@ -57,7 +57,7 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                     color: Theme.of(context).focusColor.withOpacity(1),
                   ),
                   title: Text(
-                    "Home",
+                    "الصفحة الرئيسية",
                     style: Theme.of(context).textTheme.subhead,
                   ),
                 ),
@@ -70,7 +70,7 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                     color: Theme.of(context).focusColor.withOpacity(1),
                   ),
                   title: Text(
-                    "Notifications",
+                    "إشعارات",
                     style: Theme.of(context).textTheme.subhead,
                   ),
                 ),
@@ -83,7 +83,7 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                     color: Theme.of(context).focusColor.withOpacity(1),
                   ),
                   title: Text(
-                    "My Orders",
+                    "طلباتي",
                     style: Theme.of(context).textTheme.subhead,
                   ),
                 ),
@@ -96,14 +96,14 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                     color: Theme.of(context).focusColor.withOpacity(1),
                   ),
                   title: Text(
-                    "Favorite Foods",
+                    "الأطعمة المفضلة",
                     style: Theme.of(context).textTheme.subhead,
                   ),
                 ),
                 ListTile(
                   dense: true,
                   title: Text(
-                    "Application Preferences",
+                    "تفضيلات التطبيق",
                     style: Theme.of(context).textTheme.body1,
                   ),
                   trailing: Icon(
@@ -120,7 +120,7 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                     color: Theme.of(context).focusColor.withOpacity(1),
                   ),
                   title: Text(
-                    "Help & Support",
+                    "ساعد لدعم",
                     style: Theme.of(context).textTheme.subhead,
                   ),
                 ),
@@ -133,7 +133,7 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                     color: Theme.of(context).focusColor.withOpacity(1),
                   ),
                   title: Text(
-                    "Settings",
+                    "الإعدادات",
                     style: Theme.of(context).textTheme.subhead,
                   ),
                 ),
@@ -146,7 +146,7 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                     color: Theme.of(context).focusColor.withOpacity(1),
                   ),
                   title: Text(
-                    "Languages",
+                    "اللغات",
                     style: Theme.of(context).textTheme.subhead,
                   ),
                 ),
@@ -168,8 +168,8 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                     Theme
                         .of(context)
                         .brightness == Brightness.dark
-                        ? "Light Mode"
-                        : "Dark Mode",
+                        ? "وضع الضوء"
+                        : "الوضع الداكن",
                     style: Theme.of(context).textTheme.subhead,
                   ),
                 ),
@@ -185,14 +185,14 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                     color: Theme.of(context).focusColor.withOpacity(1),
                   ),
                   title: Text(
-                    "Log out",
+                    "تسجيل خروج",
                     style: Theme.of(context).textTheme.subhead,
                   ),
                 ),
                 ListTile(
                   dense: true,
                   title: Text(
-                    "Version 0.0.1",
+                    "الإصدار 0.0.1",
                     style: Theme.of(context).textTheme.body1,
                   ),
                   trailing: Icon(

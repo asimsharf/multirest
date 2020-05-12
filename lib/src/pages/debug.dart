@@ -32,41 +32,49 @@ class _DebugWidgetState extends StateMVC<DebugWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        key: _con.scaffoldKey,
-        appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          centerTitle: true,
-          title: Text(
-            'Debug',
-            style: Theme.of(context).textTheme.title.merge(TextStyle(letterSpacing: 1.3)),
-          ),
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.my_location),
-              onPressed: () {},
-            )
-          ],
+      key: _con.scaffoldKey,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+        title: Text(
+          'Debug',
+          style: Theme
+              .of(context)
+              .textTheme
+              .title
+              .merge(TextStyle(letterSpacing: 1.3)),
         ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-        body: RefreshIndicator(
-          onRefresh: _con.refreshFavorites,
-          child: _con.favorites.isEmpty
-              ? CircularLoadingWidget(height: 500)
-              : ListView.separated(
-                  scrollDirection: Axis.vertical,
-                  shrinkWrap: true,
-                  primary: false,
-                  itemCount: _con.favorites.length,
-                  separatorBuilder: (context, index) {
-                    return SizedBox(height: 10);
-                  },
-                  itemBuilder: (context, index) {
-                    return ListTile(
-                      title: Text(_con.favorites.elementAt(index).food.name),
-                    );
-                  },
-                ),
-        ));
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.my_location),
+            onPressed: () {},
+          )
+        ],
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      body: RefreshIndicator(
+        onRefresh: _con.refreshFavorites,
+        child: _con.favorites.isEmpty
+            ? CircularLoadingWidget(height: 500)
+            : ListView.separated(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          primary: false,
+          itemCount: _con.favorites.length,
+          separatorBuilder: (context, index) {
+            return SizedBox(height: 10);
+          },
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text(_con.favorites
+                  .elementAt(index)
+                  .food
+                  .name),
+            );
+          },
+        ),
+      ),
+    );
   }
 }

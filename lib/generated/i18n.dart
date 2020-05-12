@@ -119,17 +119,17 @@ class $ar extends S {
   TextDirection get textDirection => TextDirection.rtl;
 
   @override
-  String get default_credit_card => "Default Credit Card";
+  String get default_credit_card => "بطاقة الائتمان الافتراضية";
   @override
-  String get app_language => "App Language";
+  String get app_language => "لغة التطبيق";
   @override
   String get longpress_on_the_food_to_add_suplements =>
-      "Longpress on the food to add suplements";
+      "اضغط لفترة طويلة على الطعام لإضافة المكملات الغذائية";
   @override
-  String get help_support => "Help & Support";
+  String get help_support => "ساعد لدعم";
   @override
   String get double_click_on_the_food_to_add_it_to_the =>
-      "Double click on the food to add it to the cart";
+      "انقر مرتين على الطعام لإضافته إلى سلة التسوق";
   @override
   String get about => "حول";
   @override
@@ -144,29 +144,29 @@ class $ar extends S {
   @override
   String get search_for_restaurants_or_foods => "البحث عن المطاعم أو الأطعمة";
   @override
-  String get should_be_a_valid_email => "Should be a valid email";
+  String get should_be_a_valid_email => "يجب أن يكون بريدًا إلكترونيًا صالحًا";
   @override
   String get password => "كلمة المرور";
   @override
   String get select_extras_to_add_them_on_the_food =>
-      "Select extras to add them on the food";
+      "حدد الإضافات لإضافتها إلى الطعام";
   @override
-  String get reviews => "Reviews";
+  String get reviews => "المراجعات";
   @override
   String get you_can_discover_restaurants =>
-      "You can discover restaurants & fastfood arround you and choose you best meal after few minutes we prepare and delivere it for you";
+      "يمكنك اكتشاف المطاعم والوجبات السريعة من حولك واختيار أفضل وجبة لك بعد بضع دقائق نجهزها ونقدمها لك";
   @override
-  String get faq => "Faq";
+  String get faq => "التعليمات";
   @override
   String get i_dont_have_an_account => "ليس لدي حساب؟";
   @override
   String get english => "الإنجليزية";
   @override
-  String get should_be_more_than_3_letters => "Should be more than 3 letters";
+  String get should_be_more_than_3_letters => "يجب أن يكون أكثر من 3 أحرف";
   @override
-  String get lets_start_with_register => "Let's Start with register!";
+  String get lets_start_with_register => "لنبدأ بالتسجيل!";
   @override
-  String get payment_options => "Payment Options";
+  String get payment_options => "خيارات الدفع";
   @override
   String get settings => "الإعدادات";
   @override
@@ -176,15 +176,15 @@ class $ar extends S {
   @override
   String get top_restaurants => "أهم المطاعم";
   @override
-  String get tax => "TAX";
+  String get tax => "ضريبة";
   @override
-  String get confirmation => "Confirmation";
+  String get confirmation => "التأكيد";
   @override
-  String get paypal_payment => "PayPal Payment";
+  String get paypal_payment => "الدفع باي بال";
   @override
-  String get nutrition => "Nutrition";
+  String get nutrition => "التغذية";
   @override
-  String get payments_settings => "Payments Settings";
+  String get payments_settings => "إعدادات المدفوعات";
   @override
   String get full_name => "الإسم بالكامل";
   @override
@@ -192,7 +192,7 @@ class $ar extends S {
   @override
   String get subtotal => "المجوع الفرعي";
   @override
-  String get my_orders => "My Orders";
+  String get my_orders => "طلباتي";
   @override
   String get featured_foods => "أطعمة مميزة";
   @override
@@ -202,11 +202,11 @@ class $ar extends S {
   @override
   String get favorites => "المفضله";
   @override
-  String get i_have_account_back_to_login => "I have account? Back to login";
+  String get i_have_account_back_to_login => "لدي حساب؟ العودة لتسجيل الدخول";
   @override
   String get submit => "إرسال";
   @override
-  String get john_doe => "John Doe";
+  String get john_doe => "عاصم شرف";
   @override
   String get what_they_say => "ماذا يقولون";
   @override
@@ -215,13 +215,13 @@ class $ar extends S {
   String get skip => "تخطى";
   @override
   String get your_order_has_been_successfully_submitted =>
-      "Your order has been successfully submitted!";
+      "تم تقديم طلبك بنجاح!";
   @override
   String get login => "دخول";
   @override
-  String get cash_on_delivery => "Cash on delivery";
+  String get cash_on_delivery => "الدفع عند الاستلام";
   @override
-  String get recent_orders => "Recent Orders";
+  String get recent_orders => "الطلبيات الأخيرة";
   @override
   String get total => "المجموع";
   @override
@@ -233,7 +233,7 @@ class $ar extends S {
   @override
   String get verify => "تحقق";
   @override
-  String get ingredients => "Ingredients";
+  String get ingredients => "مكونات";
   @override
   String get checkout => "دفـــع";
   @override
@@ -245,7 +245,7 @@ class $ar extends S {
   @override
   String get address => "العنوان";
   @override
-  String get multirestaurants => "Multi-Restaurants";
+  String get multirestaurants => "مطاعم متعددة";
   @override
   String get languages => "اللغة";
   @override
@@ -255,7 +255,7 @@ class $ar extends S {
   @override
   String get g => "غ";
   @override
-  String get tracking_order => "Tracking Order";
+  String get tracking_order => "تتبع الطلب";
   @override
   String get menu => "القائمة";
   @override
@@ -265,19 +265,19 @@ class $ar extends S {
   @override
   String get home => "الرئسية";
   @override
-  String get should_be_more_than_6_letters => "Should be more than 6 letters";
+  String get should_be_more_than_6_letters => "يجب أن يكون أكثر من 6 أحرف";
   @override
   String get help_supports => "المساعدة والدعم";
   @override
   String get trending_this_week => "الأكثر طلبا هذا الأسبوع";
   @override
-  String get maps_explorer => "Maps Explorer";
+  String get maps_explorer => "مستكشف الخرائط";
   @override
   String get i_forgot_password => "هل نسيت كلمة المرور؟";
   @override
   String get information => "معلومات";
   @override
-  String get discover__explorer => "Discover & Explorer";
+  String get discover__explorer => "اكتشف واستكشف";
   @override
   String get most_popular => "الأكثر شعبية";
   @override

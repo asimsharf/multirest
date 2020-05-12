@@ -36,7 +36,11 @@ class _CheckoutWidgetState extends StateMVC<CheckoutWidget> {
         centerTitle: true,
         title: Text(
           S.of(context).checkout,
-          style: Theme.of(context).textTheme.title.merge(TextStyle(letterSpacing: 1.3)),
+          style: Theme
+              .of(context)
+              .textTheme
+              .title
+              .merge(TextStyle(letterSpacing: 1.3)),
         ),
       ),
       body: Stack(
@@ -90,7 +94,8 @@ class _CheckoutWidgetState extends StateMVC<CheckoutWidget> {
                         width: 320,
                         child: FlatButton(
                           onPressed: () {
-                            Navigator.of(context).pushReplacementNamed('/PayPal');
+                            Navigator.of(context)
+                                .pushReplacementNamed('/PayPal');
                           },
                           padding: EdgeInsets.symmetric(vertical: 12),
                           color: Theme.of(context).focusColor.withOpacity(0.2),
@@ -115,10 +120,17 @@ class _CheckoutWidgetState extends StateMVC<CheckoutWidget> {
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
               decoration: BoxDecoration(
                   color: Theme.of(context).primaryColor,
-                  borderRadius: BorderRadius.only(topRight: Radius.circular(20), topLeft: Radius.circular(20)),
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(20),
+                      topLeft: Radius.circular(20)),
                   boxShadow: [
                     BoxShadow(
-                        color: Theme.of(context).focusColor.withOpacity(0.15), offset: Offset(0, -2), blurRadius: 5.0)
+                        color: Theme
+                            .of(context)
+                            .focusColor
+                            .withOpacity(0.15),
+                        offset: Offset(0, -2),
+                        blurRadius: 5.0)
                   ]),
               child: SizedBox(
                 width: MediaQuery.of(context).size.width - 40,
@@ -134,7 +146,11 @@ class _CheckoutWidgetState extends StateMVC<CheckoutWidget> {
                             style: Theme.of(context).textTheme.body2,
                           ),
                         ),
-                        Helper.getPrice(_con.subTotal, style: Theme.of(context).textTheme.subhead)
+                        Helper.getPrice(_con.subTotal,
+                            style: Theme
+                                .of(context)
+                                .textTheme
+                                .subhead)
                       ],
                     ),
                     SizedBox(height: 5),
@@ -142,11 +158,15 @@ class _CheckoutWidgetState extends StateMVC<CheckoutWidget> {
                       children: <Widget>[
                         Expanded(
                           child: Text(
-                            'TAX (${setting.defaultTax}%)',
+                            'ضريبة (${setting.defaultTax}%)',
                             style: Theme.of(context).textTheme.body2,
                           ),
                         ),
-                        Helper.getPrice(_con.taxAmount, style: Theme.of(context).textTheme.subhead)
+                        Helper.getPrice(_con.taxAmount,
+                            style: Theme
+                                .of(context)
+                                .textTheme
+                                .subhead)
                       ],
                     ),
                     Divider(height: 30),
@@ -158,7 +178,11 @@ class _CheckoutWidgetState extends StateMVC<CheckoutWidget> {
                             style: Theme.of(context).textTheme.title,
                           ),
                         ),
-                        Helper.getPrice(_con.total, style: Theme.of(context).textTheme.title)
+                        Helper.getPrice(_con.total,
+                            style: Theme
+                                .of(context)
+                                .textTheme
+                                .title)
                       ],
                     ),
                     SizedBox(height: 20),
@@ -167,7 +191,8 @@ class _CheckoutWidgetState extends StateMVC<CheckoutWidget> {
                       child: FlatButton(
                         onPressed: () {
                           Navigator.of(context).pushNamed('/OrderSuccess',
-                              arguments: new RouteArgument(param: 'Credit Card (Stripe Gateway)'));
+                              arguments: new RouteArgument(
+                                  param: 'Credit Card (Stripe Gateway)'));
 //                                      Navigator.of(context).pushReplacementNamed('/Checkout',
 //                                          arguments:
 //                                              new RouteArgument(param: [_con.carts, _con.total, setting.defaultTax]));
@@ -178,7 +203,10 @@ class _CheckoutWidgetState extends StateMVC<CheckoutWidget> {
                         child: Text(
                           S.of(context).confirm_payment,
                           textAlign: TextAlign.start,
-                          style: TextStyle(color: Theme.of(context).primaryColor),
+                          style:
+                          TextStyle(color: Theme
+                              .of(context)
+                              .primaryColor),
                         ),
                       ),
                     ),

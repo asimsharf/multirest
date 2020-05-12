@@ -151,7 +151,7 @@ class MyApp extends StatelessWidget {
           builder: (context, Locale value, _) {
             print(value);
             return MaterialApp(
-              title: 'Restaurants',
+              title: 'مطعمي',
               initialRoute: '/Splash',
               onGenerateRoute: RouteGenerator.generateRoute,
               debugShowCheckedModeBanner: false,
@@ -163,7 +163,7 @@ class MyApp extends StatelessWidget {
               ],
               supportedLocales: S.delegate.supportedLocales,
               localeListResolutionCallback:
-                  S.delegate.listResolution(fallback: const Locale('en', '')),
+              S.delegate.listResolution(fallback: const Locale('ar', '')),
               navigatorObservers: [
                 FirebaseAnalyticsObserver(analytics: analytics),
               ],
