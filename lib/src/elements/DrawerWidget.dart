@@ -165,14 +165,19 @@ class _DrawerWidgetState extends StateMVC<DrawerWidget> {
                     color: Theme.of(context).focusColor.withOpacity(1),
                   ),
                   title: Text(
-                    Theme.of(context).brightness == Brightness.dark ? "Light Mode" : "Dark Mode",
+                    Theme
+                        .of(context)
+                        .brightness == Brightness.dark
+                        ? "Light Mode"
+                        : "Dark Mode",
                     style: Theme.of(context).textTheme.subhead,
                   ),
                 ),
                 ListTile(
                   onTap: () {
                     logout().then((value) {
-                      Navigator.of(context).pushNamedAndRemoveUntil('/Login', (Route<dynamic> route) => false);
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          '/Login', (Route<dynamic> route) => false);
                     });
                   },
                   leading: Icon(

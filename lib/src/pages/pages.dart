@@ -7,7 +7,8 @@ import 'package:restaurant_rlutter_ui/src/pages/home.dart';
 import 'package:restaurant_rlutter_ui/src/pages/notifications.dart';
 import 'package:restaurant_rlutter_ui/src/pages/orders.dart';
 import 'package:restaurant_rlutter_ui/src/pages/profile.dart';
-import 'package:restaurant_rlutter_ui/src/repository/settings_repository.dart' as settingsRepo;
+import 'package:restaurant_rlutter_ui/src/repository/settings_repository.dart'
+as settingsRepo;
 
 // ignore: must_be_immutable
 class PagesTestWidget extends StatefulWidget {
@@ -15,10 +16,7 @@ class PagesTestWidget extends StatefulWidget {
   String currentTitle;
   Widget currentPage = HomeWidget();
 
-  PagesTestWidget({
-    Key key,
-    this.currentTab,
-  }) {
+  PagesTestWidget({Key key, this.currentTab}) {
     currentTab = currentTab != null ? currentTab : 2;
   }
 
@@ -31,7 +29,9 @@ class PagesTestWidget extends StatefulWidget {
 class _PagesTestWidgetState extends State<PagesTestWidget> {
   initState() {
     super.initState();
-    _selectTab(widget.currentTab);
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      _selectTab(widget.currentTab);
+    });
   }
 
   @override
@@ -79,12 +79,25 @@ class _PagesTestWidgetState extends State<PagesTestWidget> {
           elevation: 0,
           centerTitle: true,
           title: Text(
-            widget.currentTitle ?? settingsRepo.setting?.appName ?? S.of(context).home,
-            style: Theme.of(context).textTheme.title.merge(TextStyle(letterSpacing: 1.3)),
+            widget.currentTitle ??
+                settingsRepo.setting?.appName ??
+                S
+                    .of(context)
+                    .home,
+            style: Theme
+                .of(context)
+                .textTheme
+                .title
+                .merge(TextStyle(letterSpacing: 1.3)),
           ),
           actions: <Widget>[
             new ShoppingCartButtonWidget(
-                iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
+                iconColor: Theme
+                    .of(context)
+                    .hintColor,
+                labelColor: Theme
+                    .of(context)
+                    .accentColor),
           ],
         ),
         body: widget.currentPage,
@@ -124,12 +137,25 @@ class _PagesTestWidgetState extends State<PagesTestWidget> {
                     ),
                     boxShadow: [
                       BoxShadow(
-                          color: Theme.of(context).accentColor.withOpacity(0.4), blurRadius: 40, offset: Offset(0, 15)),
+                          color: Theme
+                              .of(context)
+                              .accentColor
+                              .withOpacity(0.4),
+                          blurRadius: 40,
+                          offset: Offset(0, 15)),
                       BoxShadow(
-                          color: Theme.of(context).accentColor.withOpacity(0.4), blurRadius: 13, offset: Offset(0, 3))
+                          color: Theme
+                              .of(context)
+                              .accentColor
+                              .withOpacity(0.4),
+                          blurRadius: 13,
+                          offset: Offset(0, 3))
                     ],
                   ),
-                  child: new Icon(Icons.home, color: Theme.of(context).primaryColor),
+                  child: new Icon(Icons.home,
+                      color: Theme
+                          .of(context)
+                          .primaryColor),
                 )),
             BottomNavigationBarItem(
               icon: new Icon(Icons.fastfood),
